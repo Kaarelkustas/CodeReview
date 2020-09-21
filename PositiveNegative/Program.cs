@@ -7,15 +7,23 @@ namespace PositiveNegative
         static void Main(string[] args)
         {
             /*The program checks if the number is positive or negative*/
-            Console.WriteLine("Enter your number: ");
+            Console.WriteLine("Enter your number:");
 
-            int userNumber = Console.ReadLine();
-            if(userNumber > 0)
+            int userNumber = Int32.Parse(Console.ReadLine());
+
+            if (userNumber < 0)
             {
                 Console.WriteLine("The number is negative.");
-            } else if
+            }
+            else if (userNumber > 0)
             {
                 Console.WriteLine("The number is positive.");
+
+            }
+            else          
+            { 
+                Console.WriteLine("The number is not negative or positive");
+
             }
 
         }
